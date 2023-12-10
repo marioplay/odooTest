@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7e74e97231.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>odoo</title>
+  </head>
+  <body>
+    <!-- VIDEO OVERLAY -->
+    <div id="video-overlay">
+      <div id="open-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vH-kAX3i4xE?si=BQrKODHCShXoZsqD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+    <!-- VIDEO OVERLAY -->
+
+    <script>
+      $(function() {
+        $(".video-btn").click(function() {
+          $("#video-overlay").addClass("show");
+        });
+      });
+    </script>
+    <script>
+      $(function() {
+        $("#video-overlay").click(function() {
+          $("#video-overlay").removeClass("show");
+        });
+      });
+    </script>
+
+    <div id="header">
+      <nav class="navbar navbar-expand-lg navbar-light container">
+        <a class="navbar-brand" href="#"><img src="images/odoo-white.svg" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">App</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Docs</a>
+            </li>
+          </ul>
+          <div id="top-sign-in">
+            <a href="#">Sign In</a>
+            <span id="top-buy-now">
+              <a href=""><i class="fa-solid fa-bag-shopping"></i> Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div id="top-home">
+      <div class="container">
+        <div class="row">
+          <div class="col-7 top-home-info my-auto">
+            <h2>Development done right</h2>
+            <p>Build a beautiful, modern website with flexible components built from scratch.</p>
+            <div class="button">Get started +</div>
+            <p class="text-small">Trusted by: <img src="images/google-white.svg" /><img src="images/spotify-white.svg" /><img src="images/airbnb-white.svg" /><img src="images/paypal-white.svg" /></p>
+
+          </div>
+          <div class="col-5">
+            <div id="card-block">
+              <div class="manage-cards-title">
+                <div class="row">
+                <div class="col"><h3>Manage cards</h3></div>
+                <div class="col add-new"><a href="">Add new</a></div>
+                </div>
+              </div>
+              <div id="top-card">
+                <div class="row">
+                  <div class="col"><img src="images/mastercard.svg" /></div>
+                  <div class="col card-active"><span>Active</span></div>
+                </div>
+                <p class="card-number-title text-small">CARD NUMBER</p>
+                <div class="row card-numbers">
+                  <div class="col">4358</div>
+                  <div class="col">7421</div>
+                  <div class="col">9256</div>
+                  <div class="col">6682</div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <h4>Name</h4>
+                    <p>John Snow</p>
+                  </div>
+                  <div class="col">
+                    <h4>EXPIRY DATE</h4>
+                    <p>11/23</p>
+                  </div>
+                </div>
+              </div>
+              <div class="more-card-block">
+                <div class="row">
+                  <div class="col"><h3>Starbucks</h3></div>
+                  <div class="col card-right"><h3>$5,50 USD</h3></div>
+                </div>
+                <p>Pending - San Francisco, United States</p>
+              </div>
+              <div class="more-card-block">
+                <div class="row">
+                  <div class="col"><h3>Nike Sports</h3></div>
+                  <div class="col card-right"><h3>$129,00 USD</h3></div>
+                </div>
+                <p>Pending - Lisbon, Portugal</p>
+              </div>
+              <p class="view-all"><a href="#">View all ></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div id="block-1" class="premium-block container">
+      <div class="row">
+        <div class="col-7">
+          <div id="awesome-proyects-card">
+            <h3>Awesome projects</h3>
+            <div class="card-progress">
+              <p>Create the new logo 
+              <span>3:50 ></span></p>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="card-progress">
+              <p>Set up the color palette 
+              <span>4:00 ></span></p>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="card-progress last">
+              <p>Wireframe and prototype
+              <span>6:50 ></span></p>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="video">
+              <div class="video-btn"><span>Play video <i class="fa-solid fa-play"></i></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="marker yellow">Tools</div>
+          <h2>We build for designers and developers</h2>
+          <p>Get components and examples, including tons of variables that will help you grow your business.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="block-2" class="premium-block container">
+      <div class="row">
+        <div class="col my-auto">
+          <div class="marker green">Features</div>
+          <h3>Get components and examples, including tons of variables that will help you grow your business.</h3>
+          <ul>
+            <li>Perfect for modern startups</li>
+            <li>Fully customizable and scalable</li>
+          </ul>
+        </div>
+        <div class="col">
+          <div class="video features">
+            <div class="video-btn"><span>Play video <i class="fa-solid fa-play"></i></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="block-3" class="premium-block container">
+      <div class="row">
+        <div class="col">
+
+          <div class="masonry">
+            <div class="item">
+              <div class="tech-card photo">
+                <div class="person-thumb"></div>
+                <div class="info row">
+                  <div class="col">
+                    <div class="initial">
+                      JH
+                    </div>
+                    </div>
+                  <div class="person">Jimmy Hendrix</div>
+                  <div class="like col"><i class="fa-regular fa-heart"></i></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item" style="margin-top: 15px;">
+              <div class="tech-card photo">
+                <div class="partner-logo"><img src="images/airbnb.svg" /></div>
+                <div class="stars">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <h3>4.95 out of 5 stars</h3>
+                <p>from 23 reviews</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="tech-card components-ok">
+                <div class="ok"><i class="fa-solid fa-check"></i></div>
+                <div class="ok-info">
+                  <h3>300+ components</h3>
+                  <p>Built to be customized.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="item">
+              <div class="tech-card">
+                <div class="company-logo"><img src="images/company_01.png" /></div>
+                <h3>Website UI Kit</h3>
+                <div class="review-photos">
+                  <div class="person"><img src="images/person_01.jpg" /></div>
+                  <div class="person"><img src="images/person_02.jpg" /></div>
+                  <div class="person"><img src="images/person_03.jpg" /></div>
+                </div>
+                <div class="card-actions row">
+                  <div class="col"><i class="fa-solid fa-paperclip"></i></div>
+                  <div class="col"><i class="fa-regular fa-eye"></i></div>
+                  <div class="col"><i class="fa-regular fa-heart"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col my-auto">
+          <div class="marker blue">Technology</div>
+          <h2>We use the latest technologies on the market</h2>
+          <p>Get components and examples, including tons of variables that will help you grow your business.</p>
+          <p class="view-more"><a href="#">See case studies</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="block-4" class="premium-block container">
+      <div class="row">
+        <div class="col my-auto">
+          <div class="marker yellow">Easy to install</div>
+          <h2>Download, install and run.</h2>
+          <p>Get components and examples, including tons of variables that will help you grow your business.</p>
+          <div class="download-logo">
+            <div class="app-logo"><img src="images/apple.svg"></div>
+            Download on the <span>App Store</span>
+          </div>
+          <div class="download-logo">
+            <div class="app-logo"><img src="images/google-play.svg"></div>
+            Download on the <span>Play Store</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="video install">
+            <div class="video-btn"><span>Play video <i class="fa-solid fa-play"></i></span></div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div id="infinite-solutions" class="container">
+      <div class="row">
+        <div class="col-7">
+          <h2>Infinite solutions</h2>
+          <p>Intuitive markup, powerful and lightning-fast build tools,
+          everything you need to turn your ideas into incredible products.</p>
+        </div>
+        <div class="col-5">
+          <div class="learn-more"><a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="awards">
+      <div class="container">
+        <div class="marker blue">Awards</div>
+        <h2>Awards for design, creativity, and innovation on the Internet</h2>
+        <div id="awards-carousel">
+          <div class="award">
+            <div class="award-logo"><img src="images/airbnb.svg" /></div>
+            <div class="stars">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>4.95 out of 5 stars</h3>
+            <p>from 23 reviews</p>
+          </div>
+          <div class="award">
+            <div class="award-logo"><img src="images/amazon.svg" /></div>
+            <p>They build modern looking websites easily using Tabs.</p>
+            <p class="learn-more">Learn More</p>         
+          </div>
+          <div class="award">
+            <div class="award-logo"><img src="images/slack.svg" /></div>
+            <p>They build modern looking websites easily using Tabs.</p>
+            <p class="learn-more">Learn More</p>         
+          </div>
+          <div class="award">
+            <div class="award-logo"><img src="images/spotify.svg" /></div>
+            <div class="stars">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>4.95 out of 5 stars</h3>
+            <p>from 23 reviews</p>       
+          </div>
+          <div class="award">
+            <div class="award-logo"><img src="images/paypal.svg" /></div>
+            <p>They build modern looking websites easily using Tabs.</p>
+            <p class="learn-more">Learn More</p>          
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="answers">
+      <div class="container">
+        <h2>Helpful answers</h2>
+        <p>Start building fast, beautiful, and modern-looking websites in no time.</p>
+        <div class="faq-accordion row">
+          <div class="col">
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <i class="fa-regular fa-file"></i> Which license do I need?
+                    </button>
+                  </h2>
+                </div>
+            
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <i class="fa-regular fa-lock"></i> How do I get access to my database?
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <i class="fa-regular fa-folder"></i> How do I see previous orders?
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="accordion" id="accordionExample2">
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+                      <i class="fa-regular fa-file"></i> Which license do I need?
+                    </button>
+                  </h2>
+                </div>
+            
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFive">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
+                      <i class="fa-regular fa-lock"></i> How do I get access to my database?
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingSix">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                      <i class="fa-regular fa-folder"></i> How do I see previous orders?
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3>I want to start a new project.</h3>
+        <p><a href="#" class="primary-btn">Buy now <i class="fa-solid fa-arrow-right"></i></a> <a href="#" class="secondary-btn">Learn more</a></p>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        <div class="row foot-top">
+          <div class="col">
+            <h2>Brilliant solutions for your ideas</h2>
+            <h3>Modern-looking websites.</h3>
+          </div>
+          <div class="col foot-buttons">
+            <a href="#" class="primary"><i class="fa-solid fa-book"></i> Documentation</a><a href="#" class="secondary">Purchase now</a>
+          </div>
+        </div>
+
+        <div class="row foot-links">
+          <div class="col-6">
+            <p><img src="images/odoo-white.svg" /></p>
+            <p class="desc">Odoo attempts to bring the best development experience to designers and developers by offering the tools needed for having a quick and solid start in most web projects.</p>
+            <p class="foot-media"><i class="fa-brands fa-dribbble"></i><i class="fa-brands fa-github"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-facebook"></i></p>
+          </div>
+          <div class="col-2">
+            <h3>Account</h3>
+            <ul>
+              <li>Profile</li>
+              <li>Settings</li>
+              <li>Billing</li>
+              <li>Notifications</li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <h3>About</h3>
+            <ul>
+              <li>Services</li>
+              <li>Pricing</li>
+              <li>Contact</li>
+              <li>Careers</li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <h3>Company</h3>
+            <ul>
+              <li>Community</li>
+              <li>Help center</li>
+              <li>Support</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row foot-legals">
+          <div class="col"><p><span>© Odoo.</span> All rights reserved</p></div>
+          <div class="col">
+            <ul>
+              <li>Terms</li>
+              <li>Privacy</li>
+              <li>Cookies</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+  </body>
+</html>
